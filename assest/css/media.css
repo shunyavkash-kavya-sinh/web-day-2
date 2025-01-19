@@ -2,11 +2,25 @@
    .topHeader {
       display: none;
    }
+   .sectionJourney{
+      background-position: 150px !important;
+      background-image: url(../vecater/Subtraction\ 5.svg) !important;
+      background-size: cover !important;
+   }
+   .sectionJourney .boxClarity .clarityofLarg {
+      font-size: 40px !important;
+      padding-top: 21px 0px !important;
+  }
+  
 }
 
 @media (max-width:768px) {
    .bannerImg .banner-content .bannerH1 {
       font-size: 40px;
+   }
+   .sectionJourney{
+      background-position: right;
+      background-size: contain !important;
    }
 }
 

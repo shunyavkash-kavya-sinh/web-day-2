@@ -7,14 +7,16 @@
     <title>The Hive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assest/css/media.css">
     <link rel="stylesheet" href="assest/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -44,7 +46,8 @@
             <div class="row">
                 <div class=" d-flex algin-iteam-center headMenu justify-content-between col-12">
                     <div class="headerLogo ">
-                        <img src="assest/img/thehive_logo_combined_logo_stone.png" alt="" srcset="" width="239.09px">
+                        <img src="assest/img/thehive_logo_combined_logo_stone.png" alt="banner-imgs..!" srcset=""
+                            width="239.09px">
                     </div>
                     <div class="menuBar d-flex gap ">
                         <ul class="d-flex  algin-iteam-center">
@@ -53,11 +56,11 @@
                             <li><a href="">Our Purpose</a></li>
                             <li><a href="">Case Studies</a></li>
                             <li><a href="">Case Studies</a></li>
-                           
                         </ul>
                         <a href="" class="btn btn-primary"> Get In Touch</a>
                     </div>
-                    <div class="togalBar" style="color: aliceblue;">
+                    <div class="togalBar" style="color: aliceblue;" onclick="toggleMenu()" role="button"
+                        aria-label="Toggle Menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
@@ -78,9 +81,7 @@
     <main>
         <!-- banner start -->
         <section class="bannerImg">
-            <div class="bgtop">
-                    -
-            </div>
+            <div class="bgtop">-</div>
             <div class="contanier">
                 <div class="d-flex algin-iteam-center" style="height: 100%;">
                     <div class="banner-content">
@@ -97,10 +98,11 @@
         <!-- claritySection strat -->
         <section class="sectionJourney">
             <div class="contanier">
-                <div class="d-flex algin-iteam-center" style="height: 100%;">
+                <div class="journey-box">
                     <div class="boxClarity">
                         <span class="clarityofSpan">WHO WE ARE</span>
-                        <h2 class="clarityofLarg">Has your transformation journey <span class="clarityofLargspan">lost clarity?</span></h2>
+                        <h2 class="clarityofLarg">Has your transformation journey <span class="clarityofLargspan">lost
+                                clarity?</span></h2>
                         <p class="clarityofP">At The Hive, our clients rely on us to guide them through change in
                             culture and performance using our 3 step process grounded in empathy, collaboration and
                             purposeful leadership.</p>
@@ -110,12 +112,90 @@
             </div>
         </section>
         <!-- claritySection end -->
+        <!-- "we-do-section strat -->
+        <section class="we-do-section">
+            <div class="contanier">
+                <div class="set-box">
+                    <div class="what-do-box d-flex algin-iteam-center justify-content-between">
+                        <h3 class="we-do-text">What we do</h3>
+                        <button class="btn btn-secondery"><a href="">VIEW ALL</a></button>
+                    </div>
+                    <div class="what-we-do">
 
+                        <div class="card-info">
+                            <img src="assest/img/w-do-1.png" alt="" srcset="">
+                            <div class="img-icone">
+                              
+                                <h3 class="img-icone-content">Problem Solving</h3>
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                
+                            </div>
+                        </div>
 
+                        <div class="card-info">
+                            <img src="assest/img/we-do-2.png" alt="" srcset="">
+                            <div class="img-icone">
+                                <h3 class="img-icone-content">Communication</h3>
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-info">
+                            <img src="assest/img/we-do-3.png" alt="" srcset="">
+                            <div class="img-icone">
+                                <h3 class="img-icone-content">Leadership</h3>
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- "we-do-section end -->
+        <!-- anout-section strat -->
+        <section class="about-section">
+            <div class="contanier">
+                <div class="about-box d-flex algin-iteam-center">
+                    <p class="about-box-peratext">WHAT OTHERS SAY ABOUT US</hp>
+                    <h3 class="about-box-lagtext">“This is by far the best training I’ve ever had. We are now speaking
+                        one common language across teams.”</h3>
+                    <h5 class="about-box-smalltext">Jenny Holland, <span class="about-box-span">Regional Sales
+                            Manager</span></h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="contanier">
+                <div class="multiple-items">
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                </div>
+            </div>
+        </section> -->
+        <!-- anout-section end -->
     </main>
 
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+
+
+        });
     </script>
 </body>
 

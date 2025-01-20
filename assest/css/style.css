@@ -115,6 +115,10 @@ body {
     justify-content: flex-start;
 }
 
+.justify-content-space {
+    justify-content: space-around;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
@@ -140,19 +144,6 @@ h1 {
     border: 0;
 }
 
-/* <!-- top header start--> */
-.topHeader {
-    background-color: var(--bg--primre--color);
-}
-
-.topHeader .navBar .navIcone i {
-    color: var(--text--primre--color);
-    font-size: var(--text--20px--size);
-    padding: 20px 13px;
-    line-height: 15px;
-}
-
-
 .btn {
 
     clip-path: polygon(3% 0, 100% 0%, 96% 100%, 0% 100%);
@@ -165,11 +156,23 @@ h1 {
     background-color: var(--bg--light--color);
 }
 
-.mainHeaderspan {
+/* <!-- top header start--> */
+.topHeader {
+    background-color: var(--bg--primre--color);
+}
+
+.topHeader .navBar .navIcone i {
+    color: var(--text--primre--color);
+    font-size: var(--text--20px--size);
+    padding: 20px 13px;
+    line-height: 15px;
+}
+
+.topHeader .navLoging p {
     color: #ffffff98;
     font-size: var(--text--14px--size);
     padding: 20px 8px;
-    line-height: 60px;
+    line-height: 25px;
 }
 
 
@@ -327,4 +330,122 @@ h1 {
     font-weight: 200;
 }
 
+.sectionJourney .journey-box {
+    height: 100%;
+    padding-top: 145px;
+}
+
 /* claritySection end */
+
+/* "we-do-section strat */
+.we-do-section {
+    position: relative;
+}
+
+.we-do-section::before {
+    content: '';
+    background-color: var(--bg--primre--color);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.we-do-section .what-we-do {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card-info {
+    max-height: 332px;
+    height: 100%;
+    position: relative;
+}
+
+
+.card-info .img-icone {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 10, 36);
+    background:linear-gradient(0deg, rgba(0, 10, 36, 0.8239670868347339) 56%, rgba(9, 9, 121, 0) 100%)
+}
+
+.card-info .img-icone .img-icone-content {
+    color: var(--text--primre--color);
+    font-size: var(--text--22px--size);
+    padding: 10px 29px;
+
+}
+
+.card-info .img-icone i {
+    color: var(--text--primre--color);
+    font-size: var(--text--22px--size);
+    padding: 10px 29px;
+}
+
+.we-do-section .set-box {
+    margin-top: -285px;
+}
+
+.card-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.we-do-section .what-do-box {
+    padding: 27px 0px;
+}
+
+.we-do-section .what-do-box .we-do-text {
+    font-size: var(--text--40px--size);
+    color: var(--text--primre--color);
+    font-weight: 100;
+}
+
+/* we-do-section end */
+
+/* about strat */
+
+.about-section {
+    background-color: var(--bg--primre--color);
+}
+
+.about-section .about-box {
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.about-section .about-box .about-box-peratext {
+    color: var(--text--primre--color);
+    font-size: var(--text--12px--size);
+    font-weight: 100;
+    padding: 24px 0px;
+    line-height: 15px;
+}
+
+.about-section .about-box .about-box-lagtext {
+    color: var(--text--primre--color);
+    font-size: var(--text--44px--size);
+    font-weight: 100;
+    max-width: 873px;
+    text-align: center;
+    line-height: 59px;
+    font-style: italic;
+    padding: 17px 0px;
+}
+
+.about-section .about-box .about-box-smalltext {
+    color: var(--text--primre--color);
+    font-size: var(--text--12px--size);
+    font-weight: 500;
+}
+
+.about-section .about-box .about-box-span {
+    font-weight: 100;
+}
+
+/* about end */
